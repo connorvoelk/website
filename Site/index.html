@@ -44,7 +44,7 @@
     </nav>
   </header>
   <div class="contact-container-mobile">
-    <button id="contactBtn" class="contact-btn clickable">
+    <button id="contactBtnMbl" class="contact-btn clickable">
       <img src="assets/local_post_office-24px.svg" alt="Contact">
       <p>CONTACT</p>
     </button>
@@ -73,7 +73,7 @@
             <img class="proj-img" id="death" src="assets/death.png" alt="temp">
           </div>
           <div class="proj-img-wrap">
-            <img class="proj-img" id="inst" src="assets/Cydia.png" alt="temp">
+            <img class="proj-img" id="inst" src="assets/instdb.png" alt="temp">
           </div>
           <div class="proj-img-wrap">
             <img class="proj-img" id="head" src="assets/Cydia.png" alt="temp">
@@ -705,16 +705,24 @@
       <img src="assets/close.svg" id="contactCloseBtn" alt="Close">
     </div>
     <div class="contact-container">
-      <div>
-        <form>
-          <h2>Name</h2>
-          <input id="nameInput" type="text">
-          <h2>Message</h2>
-          <input id="messageInput" type="text">
-        </form>
+      <div class="contact-grid">
+        <div>
+          <form>
+            <h2>Name</h2>
+            <input id="nameInput" type="text">
+            <h2>Message</h2>
+            <input id="messageInput" type="text">
+          </form>
+        </div>
+        <div class="contact-desc">
+          <p>Feel free to give feedback on my website, portfolio projects, blog, or resume!<br /><br />Let me know if
+            you are
+            interested in getting in touch with me for a project or
+            position!</p>
+        </div>
       </div>
       <div>
-        <button>SEND</button>
+        <button id="sendContactBtn" class="cta clickable">SEND</button>
       </div>
     </div>
 

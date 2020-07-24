@@ -4,6 +4,7 @@ let resumeNav = document.querySelector("#resumeNav");
 let portfolioNav = document.querySelector("#portfolioNav");
 let blogNav = document.querySelector("#blogNav");
 let contactBtn = document.querySelector("#contactBtn");
+let contactBtnMbl = document.querySelector("#contactBtnMbl");
 
 /*Pop Ups*/
 let glassOverlay = document.querySelector("#glassOverlay");
@@ -77,6 +78,11 @@ blogNav.addEventListener("click", function () {
 
 //Contact Overlay
 contactBtn.addEventListener("click", function () {
+    glassOverlay.classList.toggle("hide");
+    contactOverlay.classList.toggle("hide");
+})
+
+contactBtnMbl.addEventListener("click", function () {
     glassOverlay.classList.toggle("hide");
     contactOverlay.classList.toggle("hide");
 })

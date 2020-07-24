@@ -274,6 +274,12 @@ flex-direction: row;
     z-index: 7;
 }
 
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #F8F8F8;
+}
+
 .contact-header{
     display: flex;
     flex-direction: row;
@@ -312,7 +318,11 @@ flex-direction: row;
     background: #F8F8F8;
     border-radius: 5px;
     border:none;
-    width:45%;
+    width:90%;
+}
+
+.contact-desc{
+    display: none;
 }
 
 .contact-overlay form #nameInput{
@@ -324,12 +334,11 @@ flex-direction: row;
     height: 8em;
 }
 
-.contact-overlay button{
-    background-image: linear-gradient(321.59deg, #0047FF 12.52%, #5229E4, #3F31DE);
-    border-radius: 30px;
-    width:50px;
-    border: none;
+#sendContactBtn{
+    float:right;
+    margin-right:10px;
 }
+
 
 /*FOOTER*/
 footer {
@@ -411,6 +420,13 @@ footer p {
         grid-row: span 2;
         height: 400px;
     } 
+    .contact-desc{
+        display: grid;
+    }
+
+    .contact-grid{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (min-width: 850px){
