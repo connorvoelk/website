@@ -267,7 +267,6 @@ flex-direction: row;
     position:fixed;
     top:25%;
     left:25%;
-    height:50%;
     width:50%;
     background-color: #1C1C1C;
     border-radius: 15px;
@@ -309,12 +308,12 @@ flex-direction: row;
     margin: 15px;
 }
 
-.contact-overlay h2{
+.contact-overlay label{
     font-size: 1em;
     color: #F8F8F8;
 }
 
-.contact-overlay form input{
+.contact-overlay form input, textarea{
     background: #F8F8F8;
     border-radius: 5px;
     border:none;
@@ -327,16 +326,25 @@ flex-direction: row;
 
 .contact-overlay form #nameInput{
     height: 1.5em;
-    margin-bottom: 30px;
 }
 
 .contact-overlay form #messageInput{
     height: 8em;
 }
 
+#messageLabel{
+    margin-top: 30px;
+}
+
+.error{
+    margin-top:0;
+    color:red;
+}
+
 #sendContactBtn{
     float:right;
     margin-right:10px;
+    margin-bottom: 10px;
 }
 
 

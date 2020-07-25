@@ -10,6 +10,7 @@ let contactBtnMbl = document.querySelector("#contactBtnMbl");
 let glassOverlay = document.querySelector("#glassOverlay");
 let contactOverlay = document.querySelector("#contactOverlay");
 let contactCloseBtn = document.querySelector("#contactCloseBtn");
+let contactForm = document.querySelector("#contactForm");
 
 //Site contents
 let portfolioContent = document.querySelector("#portfolio");
@@ -169,10 +170,30 @@ headSelector.addEventListener("click", function () {
     headCards.classList.remove("hide");
 })
 
-//Removbe all cards
+//Removbe all cards 
 
 function removeAllCards() {
     allCards.forEach(node => {
         node.classList.add("hide");
     })
 }
+
+//Contact Form Submission
+contactForm.addEventListener("submit", function (event) {
+    let error = document.querySelector("#error");
+    let name = document.querySelector("#nameInput").value;
+    let message = document.querySelector("#messageInput").value;
+    if (name.includes('@') && name.includes('.')) {
+        console.log(message);
+        console.log(name);
+        console.log("submit!");
+        //document.querySelector("#nameInput").value = "";
+        // message = document.querySelector("#messageInput") = "";
+        if (!error.classList.contains("hide")) {
+            error.classList.add("hide");
+        }
+    } else {
+        event.preventDefault();
+        error.classList.remove("hide");
+    }
+})
