@@ -184,9 +184,6 @@ contactForm.addEventListener("submit", function (event) {
     let name = document.querySelector("#nameInput").value;
     let message = document.querySelector("#messageInput").value;
     if (name.includes('@') && name.includes('.')) {
-        console.log(message);
-        console.log(name);
-        console.log("submit!");
         document.querySelector("#nameInput").value = "";
         message = document.querySelector("#messageInput") = "";
         if (!error.classList.contains("hide")) {
