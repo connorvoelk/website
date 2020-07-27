@@ -187,8 +187,8 @@ contactForm.addEventListener("submit", function (event) {
         console.log(message);
         console.log(name);
         console.log("submit!");
-        //document.querySelector("#nameInput").value = "";
-        // message = document.querySelector("#messageInput") = "";
+        document.querySelector("#nameInput").value = "";
+        message = document.querySelector("#messageInput") = "";
         if (!error.classList.contains("hide")) {
             error.classList.add("hide");
         }
