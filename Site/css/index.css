@@ -2,6 +2,9 @@ body {
     background: linear-gradient(122.29deg, #00C1FF 0.31%, rgba(85, 227, 159, 0) 100%), #55E39F;
     font-family: 'Lato', sans-serif;
     background-attachment: fixed; /*For glass overlay*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav {
@@ -71,15 +74,15 @@ display: flex;
 flex-wrap:wrap;
  flex-direction: row;
  align-items: center;
- justify-content: space-between;
- margin-left: 100px;
- margin-right: 100px;
+ justify-content: space-evenly;
 }
 
 .proj-img{
     width:120px;
     filter: brightness(85%);
     transition: all .2s;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 
@@ -102,18 +105,8 @@ flex-wrap:wrap;
 .project h1{
     color:#1C1C1C;
     font-size: 32pt;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
-}
-
-.proj-card-container{
-    width:90%;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns:1fr;
-    grid-auto-flow: row dense;
-    /*grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));*/
-    grid-template-rows: auto;
 }
 
 .card{
@@ -124,8 +117,17 @@ flex-wrap:wrap;
     margin:10px;
 }
 
-.card .big-img{
-width: 700px;
+.proj-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card h1{
+    background: -webkit-linear-gradient(122.29deg, #00C1FF 0.31%, rgba(85, 227, 159, 0) 100%), #55E39F;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .made-imgs{
 display: flex;
@@ -179,6 +181,7 @@ flex-direction: row;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     text-align: center;
+    align-items: center;
   }
 
   .grid a h3 {
@@ -342,21 +345,20 @@ flex-direction: row;
 }
 
 #sendContactBtn{
-    float:right;
-    margin-right:10px;
+    float: right;
+    margin-right: 10px;
     margin-bottom: 10px;
 }
 
 
 /*FOOTER*/
 footer {
+    clear: both;
     background: #1C1C1C;
-    bottom:0;
-    left:0;
-    width:100%;
-    padding-bottom: 0;
-    padding-left:0;
-    margin-left:0;  
+    position: relative;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
     color:white;
 }
 
