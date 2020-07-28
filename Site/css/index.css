@@ -121,7 +121,7 @@ flex-wrap:wrap;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 90vw;
 }
 
 .card h1{
@@ -414,20 +414,6 @@ footer p {
   @media (min-width:500px){
     .proj-card-container{
         grid-template-columns: 1fr 1fr;
-    } 
-    .item-small{
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-
-    .item-med{
-        grid-column: span 2;
-        grid-row: span 1;
-    } 
-    .item-large{
-        grid-column: span 2;
-        grid-row: span 2;
-        height: 400px;
     } 
     .contact-desc{
         display: grid;

@@ -6,7 +6,7 @@ let blogNav = document.querySelector("#blogNav");
 let contactBtn = document.querySelector("#contactBtn");
 let contactBtnMbl = document.querySelector("#contactBtnMbl");
 
-/*Pop Ups*/
+//Pop Ups
 let glassOverlay = document.querySelector("#glassOverlay");
 let contactOverlay = document.querySelector("#contactOverlay");
 let contactCloseBtn = document.querySelector("#contactCloseBtn");
@@ -170,8 +170,7 @@ headSelector.addEventListener("click", function () {
     headCards.classList.remove("hide");
 })
 
-//Removbe all cards 
-
+//Remove all cards 
 function removeAllCards() {
     allCards.forEach(node => {
         node.classList.add("hide");
