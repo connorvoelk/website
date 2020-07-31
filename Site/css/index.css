@@ -84,6 +84,7 @@ nav li:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 99vw;
 }
 
 .proj-img {
@@ -127,7 +128,7 @@ nav li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90vw;
+  width: 97vw;
 }
 
 .proj-card p {
@@ -452,7 +453,7 @@ footer .footer-links a img {
 
 footer .footer-links a img:hover {
   width: 33px;
-  padding: 10px;
+  padding: 8px;
 }
 
 @media (min-width: 650px) {
