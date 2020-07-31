@@ -84,13 +84,14 @@ nav li:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 99vw;
 }
 
 .proj-img {
   width: 120px;
   filter: brightness(85%);
   transition: all 0.2s;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .proj-img:hover {
@@ -180,6 +181,14 @@ nav li:hover {
   stroke: none;
   border: none;
   z-index: 1;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  height: 50px;
 }
 
 .cta:hover {
