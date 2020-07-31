@@ -183,7 +183,7 @@ nav li:hover {
 
 .cta::before {
   position: absolute;
-  content: "";
+  content: "HIII";
   background-image: linear-gradient(
     to bottom,
     red,
