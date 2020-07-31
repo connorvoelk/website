@@ -394,10 +394,10 @@ footer {
   clear: both;
   background: #1c1c1c;
   position: relative;
-  width: 100vw;
+  width: 99.9vw;
   padding: 0px;
   margin: 0px;
-  color: white;
+  color: #f8f8f8;
 }
 
 footer .footer-container {
@@ -422,6 +422,37 @@ footer .footer-logo {
 
 footer p {
   margin-bottom: 5px;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-links a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+footer .footer-links a img {
+  width: 30px;
+  padding: 5px;
+  background-image: linear-gradient(
+    321.59deg,
+    #0047ff 12.52%,
+    #5229e4,
+    #3f31de
+  );
+  transition: 0.2s;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 50px;
+}
+
+footer .footer-links a img:hover {
+  width: 33px;
+  padding: 10px;
 }
 
 @media (min-width: 650px) {
