@@ -178,34 +178,56 @@ nav li:hover {
   justify-content: center;
   stroke: none;
   border: none;
+  z-index: 1;
 }
 
+.cta::before {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(
+    to bottom,
+    red,
+    green /* 321.59deg,
+    #3f31de 12.52%,
+    #5229e4,
+    #0047ff */
+  );
+  z-index: 3;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.cta:hover::before {
+  opacity: 1;
+}
+
+/*
 .cta:hover {
   background-image: linear-gradient(
     321.59deg,
     #3f31de 12.52%,
     #5229e4,
     #0047ff
-  );
-}
+  ); */
 
 .cta-alt {
   color: #55e39f;
   border-color: #55e39f;
   border-radius: 100px;
+  border-width: 5px;
   background: inherit;
   width: 130px;
-  padding: 3px;
+  padding: 5px;
   height: 40px;
   font-size: 1.2em;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
 }
 
-.cta-alt-in {
-  background: #1c1c1c;
-  color: #55e39f;
-  border-radius: 100px;
+.cta-alt:hover {
+  width: 135px;
+  height: 45px;
 }
 
 .grid {
@@ -217,13 +239,11 @@ nav li:hover {
 }
 a {
   text-decoration: none;
-}
-
-a h3 {
-  color: #00c2ff;
+  color: #00c1ff;
   transition: ease 0.3s;
 }
-.grid a:hover h3 {
+
+a:hover {
   color: #1887a9;
 }
 

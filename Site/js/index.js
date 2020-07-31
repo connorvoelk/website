@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 //Nav bar
 let resumeNav = document.querySelector("#resumeNav");
 let portfolioNav = document.querySelector("#portfolioNav");
@@ -46,150 +46,149 @@ let allCards = document.querySelectorAll(".project");
 
 //Reset the content
 function contentReset() {
-    allContents.forEach(cont => {
-        cont.classList.add("hide");
-    })
+  allContents.forEach((cont) => {
+    cont.classList.add("hide");
+  });
 }
-
 
 //Navigation bar
 resumeNav.addEventListener("click", function () {
-    resumeNav.classList.add("current");
-    portfolioNav.classList.remove("current");
-    blogNav.classList.remove("current");
-    contentReset();
-    resumeContent.classList.remove("hide");
-})
+  resumeNav.classList.add("current");
+  portfolioNav.classList.remove("current");
+  blogNav.classList.remove("current");
+  contentReset();
+  resumeContent.classList.remove("hide");
+});
 
 portfolioNav.addEventListener("click", function () {
-    resumeNav.classList.remove("current");
-    portfolioNav.classList.add("current");
-    blogNav.classList.remove("current");
-    contentReset();
-    portfolioContent.classList.remove("hide");
-})
+  resumeNav.classList.remove("current");
+  portfolioNav.classList.add("current");
+  blogNav.classList.remove("current");
+  contentReset();
+  portfolioContent.classList.remove("hide");
+});
 
 blogNav.addEventListener("click", function () {
-    resumeNav.classList.remove("current");
-    portfolioNav.classList.remove("current");
-    blogNav.classList.add("current");
-    contentReset();
-    blogContent.classList.remove("hide");
-})
+  resumeNav.classList.remove("current");
+  portfolioNav.classList.remove("current");
+  blogNav.classList.add("current");
+  contentReset();
+  blogContent.classList.remove("hide");
+});
 
 //Contact Overlay
 contactBtn.addEventListener("click", function () {
-    glassOverlay.classList.toggle("hide");
-    contactOverlay.classList.toggle("hide");
-})
+  glassOverlay.classList.toggle("hide");
+  contactOverlay.classList.toggle("hide");
+});
 
 contactBtnMbl.addEventListener("click", function () {
-    glassOverlay.classList.toggle("hide");
-    contactOverlay.classList.toggle("hide");
-})
+  glassOverlay.classList.toggle("hide");
+  contactOverlay.classList.toggle("hide");
+});
 
 contactCloseBtn.addEventListener("click", function () {
-    glassOverlay.classList.toggle("hide");
-    contactOverlay.classList.toggle("hide");
-})
+  glassOverlay.classList.toggle("hide");
+  contactOverlay.classList.toggle("hide");
+});
 glassOverlay.addEventListener("click", function () {
-    glassOverlay.classList.toggle("hide");
-    contactOverlay.classList.add("hide");
-})
+  glassOverlay.classList.toggle("hide");
+  contactOverlay.classList.add("hide");
+});
 
 //Project image selectors
 //remove selected from all selectyors
 function removeAllSelected() {
-    allSelectors.forEach(node => {
-        node.classList.remove("selected");
-    })
+  allSelectors.forEach((node) => {
+    node.classList.remove("selected");
+  });
 }
 
 //All the selectors clicks
 uberSelector.addEventListener("click", function () {
-    removeAllSelected();
-    console.log(allSelectors);
-    uberSelector.classList.add("selected");
-    removeAllCards();
-    uberCards.classList.remove("hide");
-})
+  removeAllSelected();
+  console.log(allSelectors);
+  uberSelector.classList.add("selected");
+  removeAllCards();
+  uberCards.classList.remove("hide");
+});
 
 pokeSelector.addEventListener("click", function () {
-    removeAllSelected();
-    console.log(allSelectors);
-    pokeSelector.classList.add("selected");
-    removeAllCards();
-    pokeCards.classList.remove("hide");
-})
+  removeAllSelected();
+  console.log(allSelectors);
+  pokeSelector.classList.add("selected");
+  removeAllCards();
+  pokeCards.classList.remove("hide");
+});
 
 shareSelector.addEventListener("click", function () {
-    removeAllSelected();
-    console.log(allSelectors);
-    shareSelector.classList.add("selected");
-    removeAllCards();
-    shareCards.classList.remove("hide");
-})
+  removeAllSelected();
+  console.log(allSelectors);
+  shareSelector.classList.add("selected");
+  removeAllCards();
+  shareCards.classList.remove("hide");
+});
 
 consSelector.addEventListener("click", function () {
-    removeAllSelected();
-    console.log(allSelectors);
-    consSelector.classList.add("selected");
-    removeAllCards();
-    consCards.classList.remove("hide");
-})
+  removeAllSelected();
+  console.log(allSelectors);
+  consSelector.classList.add("selected");
+  removeAllCards();
+  consCards.classList.remove("hide");
+});
 
 knoSelector.addEventListener("click", function () {
-    removeAllSelected();
-    console.log(allSelectors);
-    knoSelector.classList.add("selected");
-    removeAllCards();
-    knoCards.classList.remove("hide");
-})
+  removeAllSelected();
+  console.log(allSelectors);
+  knoSelector.classList.add("selected");
+  removeAllCards();
+  knoCards.classList.remove("hide");
+});
 
 deathSelector.addEventListener("click", function () {
-    removeAllSelected();
-    console.log(allSelectors);
-    deathSelector.classList.add("selected");
-    removeAllCards();
-    deathCards.classList.remove("hide");
-})
+  removeAllSelected();
+  console.log(allSelectors);
+  deathSelector.classList.add("selected");
+  removeAllCards();
+  deathCards.classList.remove("hide");
+});
 
 instSelector.addEventListener("click", function () {
-    removeAllSelected();
-    console.log(allSelectors);
-    instSelector.classList.add("selected");
-    removeAllCards();
-    instCards.classList.remove("hide");
-})
+  removeAllSelected();
+  console.log(allSelectors);
+  instSelector.classList.add("selected");
+  removeAllCards();
+  instCards.classList.remove("hide");
+});
 
 headSelector.addEventListener("click", function () {
-    removeAllSelected();
-    console.log(allSelectors);
-    headSelector.classList.add("selected");
-    removeAllCards();
-    headCards.classList.remove("hide");
-})
+  removeAllSelected();
+  console.log(allSelectors);
+  headSelector.classList.add("selected");
+  removeAllCards();
+  headCards.classList.remove("hide");
+});
 
-//Remove all cards 
+//Remove all cards
 function removeAllCards() {
-    allCards.forEach(node => {
-        node.classList.add("hide");
-    })
+  allCards.forEach((node) => {
+    node.classList.add("hide");
+  });
 }
 
 //Contact Form Submission
 contactForm.addEventListener("submit", function (event) {
-    let error = document.querySelector("#error");
-    let name = document.querySelector("#nameInput").value;
-    let message = document.querySelector("#messageInput").value;
-    if (name.includes('@') && name.includes('.')) {
-        document.querySelector("#nameInput").value = "";
-        message = document.querySelector("#messageInput") = "";
-        if (!error.classList.contains("hide")) {
-            error.classList.add("hide");
-        }
-    } else {
-        event.preventDefault();
-        error.classList.remove("hide");
+  let error = document.querySelector("#error");
+  let name = document.querySelector("#nameInput").value;
+  let message = document.querySelector("#messageInput").value;
+  if (name.includes("@") && name.includes(".")) {
+    document.querySelector("#nameInput").value = "";
+    message = document.querySelector("#messageInput") = "";
+    if (!error.classList.contains("hide")) {
+      error.classList.add("hide");
     }
-})
+  } else {
+    event.preventDefault();
+    error.classList.remove("hide");
+  }
+});
