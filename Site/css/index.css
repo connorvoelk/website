@@ -229,6 +229,14 @@ nav li:hover {
   transform: rotate(180deg);
 }
 
+.expand-btn:hover img {
+  transform: rotate(8deg);
+}
+
+.flipped.expand-btn:hover img {
+  transform: rotate(170deg);
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
