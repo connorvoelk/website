@@ -215,6 +215,20 @@ nav li:hover {
   height: 45px;
 }
 
+.expand-btn {
+  background: inherit;
+  border: none;
+}
+
+.expand-btn img {
+  width: 80px;
+  transition: all 0.3s;
+}
+
+.flipped img {
+  transform: rotate(180deg);
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

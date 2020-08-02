@@ -19,6 +19,19 @@ let bloglioContent = document.querySelector("#blog");
 
 let allContents = document.querySelectorAll(".content");
 
+//RESUME
+//Expand buttons
+let educEx = document.querySelector("#eduEx");
+let cvEx = document.querySelector("#cvEx");
+let workEx = document.querySelector("#workEx");
+let volEx = document.querySelector("#volEx");
+
+//Contents
+let eduContent = document.querySelector("#eduContent");
+let cvContent = document.querySelector("#cvContent");
+let workContent = document.querySelector("#workContent");
+let volContent = document.querySelector("#volContent");
+
 //PORTFOLIO
 //Portfolio Selectors
 let uberSelector = document.querySelector("#uber");
@@ -94,6 +107,27 @@ contactCloseBtn.addEventListener("click", function () {
 glassOverlay.addEventListener("click", function () {
   glassOverlay.classList.toggle("hide");
   contactOverlay.classList.add("hide");
+});
+
+//Resume Expand Buttons to content
+educEx.addEventListener("click", function () {
+  eduContent.classList.toggle("hide");
+  eduEx.classList.toggle("flipped");
+});
+
+cvEx.addEventListener("click", function () {
+  cvContent.classList.toggle("hide");
+  cvEx.classList.toggle("flipped");
+});
+
+workEx.addEventListener("click", function () {
+  workContent.classList.toggle("hide");
+  workEx.classList.toggle("flipped");
+});
+
+volEx.addEventListener("click", function () {
+  volContent.classList.toggle("hide");
+  volEx.classList.toggle("flipped");
 });
 
 //Project image selectors
