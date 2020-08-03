@@ -20,6 +20,7 @@ nav {
   width: 100%;
   padding-bottom: 0;
   z-index: 3;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 nav .nav-container {
@@ -142,8 +143,25 @@ nav li:hover {
 
 .proj-card p {
   margin-top: 0px;
-  margin-left: 100px;
-  margin-right: 100px;
+  width: 80%;
+  font-size: 14pt;
+}
+
+.proj-big-img {
+  width: 60%;
+  margin-top: 15px;
+}
+
+.proj-card h2 {
+  margin-bottom: 5px;
+  font-size: 18pt;
+}
+
+.proj-card h3 {
+  margin-bottom: 5px;
+  margin-top: 3px;
+  font-size: 16pt;
+  float: right;
 }
 
 .proj-card img {
