@@ -154,12 +154,12 @@ nav li:hover {
 }
 .proj-card .img-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .proj-card .img-grid img {
-  width: 100px;
-  margin: 1000px;
+  width: 400px;
+  margin: 20px;
 }
 
 .made-imgs {
@@ -444,6 +444,7 @@ footer {
 footer .footer-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 80%;
@@ -516,6 +517,10 @@ footer .footer-links a img:hover {
 
   .contact-container-mobile {
     display: none;
+  }
+
+  .proj-card .img-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
