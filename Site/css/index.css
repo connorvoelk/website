@@ -164,6 +164,11 @@ nav li:hover {
   float: right;
 }
 
+.proj-card iframe {
+  border-radius: 8px;
+  width: 60%;
+}
+
 .proj-card img {
   border-radius: 8px;
 }
