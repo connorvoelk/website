@@ -99,7 +99,7 @@ nav li:hover {
 }
 
 .proj-img {
-  width: 120px;
+  width: 55px;
   filter: brightness(85%);
   transition: all 0.2s;
   margin-left: 10px;
@@ -108,11 +108,13 @@ nav li:hover {
 
 .proj-img:hover {
   width: 140px;
+  width: 70px;
   filter: brightness(93%);
 }
 
 .proj-img.selected {
   width: 160px;
+  width: 80px;
   filter: brightness(100%);
 }
 
@@ -570,6 +572,18 @@ footer .footer-links a img:hover {
 @media (min-width: 500px) {
   .contact-desc {
     display: grid;
+  }
+
+  .proj-img {
+    width: 120px;
+  }
+
+  .proj-img:hover {
+    width: 140px;
+  }
+
+  .proj-img.selected {
+    width: 160px;
   }
 
   h1 {
