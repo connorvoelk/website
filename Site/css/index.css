@@ -60,6 +60,10 @@ nav li h1 {
   transition: all 0.2s;
 }
 
+h1 {
+  font-size: 14pt;
+}
+
 nav .current {
   background: -webkit-linear-gradient(
       122.29deg,
@@ -564,21 +568,16 @@ footer .footer-links a img:hover {
 }
 
 @media (min-width: 500px) {
-  .proj-card-container {
-    grid-template-columns: 1fr 1fr;
-  }
   .contact-desc {
     display: grid;
   }
 
+  h1 {
+    font-size: 18pt;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 850px) {
-  .proj-card-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
