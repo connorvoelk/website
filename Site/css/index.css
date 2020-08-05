@@ -195,6 +195,13 @@ nav li:hover {
   width: 60px;
 }
 
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
 .cta {
   border-radius: 100px;
   width: 130px;
@@ -214,14 +221,7 @@ nav li:hover {
   stroke: none;
   border: none;
   z-index: 1;
-}
-
-.btn-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 25%;
-  height: 50px;
+  margin: 20px;
 }
 
 .cta:hover {
@@ -241,6 +241,7 @@ nav li:hover {
   align-items: center;
   justify-content: center;
   transition: 0.2s;
+  margin: 20px;
 }
 
 .cta-alt:hover {
