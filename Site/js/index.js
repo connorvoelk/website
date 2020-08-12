@@ -61,6 +61,7 @@ let allCards = document.querySelectorAll(".project");
 function contentReset() {
   allContents.forEach((cont) => {
     cont.classList.add("hide");
+    window.scrollTo(0,0);
   });
 }
 
@@ -71,6 +72,7 @@ resumeNav.addEventListener("click", function () {
   blogNav.classList.remove("current");
   contentReset();
   resumeContent.classList.remove("hide");
+  window.scrollTo(0,0);
 });
 
 portfolioNav.addEventListener("click", function () {
@@ -79,6 +81,7 @@ portfolioNav.addEventListener("click", function () {
   blogNav.classList.remove("current");
   contentReset();
   portfolioContent.classList.remove("hide");
+  window.scrollTo(0,0);
 });
 
 blogNav.addEventListener("click", function () {
@@ -87,6 +90,7 @@ blogNav.addEventListener("click", function () {
   blogNav.classList.add("current");
   contentReset();
   blogContent.classList.remove("hide");
+  window.scrollTo(0,0);
 });
 
 //Contact Overlay
