@@ -301,6 +301,12 @@ a:hover {
   line-height: 33px;
 }
 
+.blog h1{
+  margin-top: 25vh;;
+  font-size: 81pt;
+  margin-bottom: 35vh;
+}
+
 /*CONTACT*/
 .contact-container-nav {
   display: none;

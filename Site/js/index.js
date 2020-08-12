@@ -15,7 +15,7 @@ let contactForm = document.querySelector("#contactForm");
 //Site contents
 let portfolioContent = document.querySelector("#portfolio");
 let resumeContent = document.querySelector("#resume");
-let bloglioContent = document.querySelector("#blog");
+let blogContent = document.querySelector("#blog");
 
 let allContents = document.querySelectorAll(".content");
 
