@@ -133,6 +133,7 @@ nav li:hover {
 
 .card {
   background-color: #1c1c1c;
+ /* background-color: #313236; */
   border-radius: 8px;
   color: #f8f8f8;
   padding: 5px;
@@ -240,6 +241,7 @@ nav li:hover {
   border: 5px solid #55e39f;
   border-radius: 100px;
   background: inherit;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   width: 130px;
   padding: 5px;
   height: 40px;
