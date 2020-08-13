@@ -246,6 +246,7 @@ nav li:hover {
   padding: 5px;
   height: 40px;
   font-size: 1em;
+  font-weight: 400;
   align-items: center;
   justify-content: center;
   transition: 0.2s;

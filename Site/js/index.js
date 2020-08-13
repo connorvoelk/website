@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 //Nav bar
 let resumeNav = document.querySelector("#resumeNav");
 let portfolioNav = document.querySelector("#portfolioNav");
