@@ -220,7 +220,7 @@ contactForm.addEventListener("submit", function (event) {
   let name = document.querySelector("#nameInput").value;
   let message = document.querySelector("#messageInput").value;
   if (name.includes("@") && name.includes(".")) {
-    document.querySelector("#nameInput").value = "";
+   // document.querySelector("#nameInput").value = "";
     message = document.querySelector("#messageInput") = "";
     if (!error.classList.contains("hide")) {
       error.classList.add("hide");
