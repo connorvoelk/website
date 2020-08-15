@@ -1,15 +1,20 @@
 body {
+  background: #1c1c1c;
+  font-family: "Lato", sans-serif;
+  background-attachment: fixed; /*For glass overlay*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main{
   background: linear-gradient(
       122.29deg,
       #00c1ff 0.31%,
       rgba(85, 227, 159, 0) 100%
     ),
     #55e39f;
-  font-family: "Lato", sans-serif;
-  background-attachment: fixed; /*For glass overlay*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width:100vw;
 }
 
 nav {
