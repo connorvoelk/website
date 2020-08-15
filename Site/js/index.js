@@ -1,4 +1,30 @@
 //"use strict";
+/*
+//Router
+window.onload=function(){
+  var Router = function(name, routes){
+    return{
+      name: name,
+      routes: routes
+    }
+  };
+
+  var siteRouter = new Router('my first router', [
+    {path: '/',
+    name: 'Root'},
+    {path: '/blog',
+    name:'Blog'},
+    {path:'/resume',
+    name: 'Resume'},
+    {path: '/portfolio',
+    name:'Portfolio'}
+  ]);
+  var currentPath = window.location.pathname;
+  if(currentPath === '/'){
+
+  } else if
+}
+*/
 //Nav bar
 let resumeNav = document.querySelector("#resumeNav");
 let portfolioNav = document.querySelector("#portfolioNav");

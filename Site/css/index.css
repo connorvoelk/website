@@ -273,11 +273,11 @@ nav li:hover {
 }
 
 .expand-btn:hover img {
-  transform: rotate(8deg);
+  transform: rotate(20deg);
 }
 
 .flipped.expand-btn:hover img {
-  transform: rotate(170deg);
+  transform: rotate(155deg);
 }
 
 .grid {
