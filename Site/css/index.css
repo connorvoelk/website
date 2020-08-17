@@ -560,6 +560,10 @@ footer .footer-links a img:hover {
     width: 33%;
     margin-bottom: 0;
   }
+
+  body{
+    overflow-x: hidden;
+  }
 }
 
 @media (min-width: 960px) {
