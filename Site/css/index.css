@@ -133,7 +133,7 @@ nav li:hover {
 
 .card {
   background-color: #1c1c1c;
- /* background-color: #313236; */
+  /* background-color: #313236; */
   border-radius: 8px;
   color: #f8f8f8;
   padding: 5px;
@@ -302,8 +302,8 @@ a:hover {
   line-height: 33px;
 }
 
-.blog h1{
-  margin-top: 25vh;;
+.blog h1 {
+  margin-top: 25vh;
   font-size: 81pt;
   margin-bottom: 35vh;
 }
@@ -464,6 +464,11 @@ textarea {
   color: red;
 }
 
+.blog-container {
+  display: flex;
+  flex-direction: column;
+}
+
 #sendContactBtn {
   float: right;
   margin-right: 10px;
@@ -561,7 +566,7 @@ footer .footer-links a img:hover {
     margin-bottom: 0;
   }
 
-  body{
+  body {
     overflow-x: hidden;
   }
 }
