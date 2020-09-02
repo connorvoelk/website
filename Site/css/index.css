@@ -80,7 +80,7 @@ nav li:hover {
 }
 
 .site-content {
-  margin-top: 120px;
+  margin-top: 60px;
 }
 
 .content {
@@ -129,6 +129,7 @@ nav li:hover {
   font-size: 32pt;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .card {
@@ -138,6 +139,9 @@ nav li:hover {
   color: #f8f8f8;
   padding: 5px;
   margin: 10px;
+}
+
+.resume .card {
   width: 97vw;
 }
 
@@ -303,10 +307,31 @@ a:hover {
   line-height: 33px;
 }
 
+/*BLOG*/
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog p {
+  font-size: 14pt;
+  margin: 5px;
+}
+
 .blog h1 {
   margin-top: 25vh;
-  font-size: 81pt;
   margin-bottom: 35vh;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about img {
+  width: 80px;
 }
 
 /*CONTACT*/
@@ -465,11 +490,6 @@ textarea {
   color: red;
 }
 
-.blog-container {
-  display: flex;
-  flex-direction: column;
-}
-
 #sendContactBtn {
   float: right;
   margin-right: 10px;
@@ -485,17 +505,6 @@ footer {
   margin: 0px;
   color: #f8f8f8;
 }
-
-/*
-footer .footer-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-} */
 
 footer .footer-container {
   display: grid;
@@ -571,24 +580,12 @@ footer .footer-links a img:hover {
     overflow-x: hidden;
   }
 }
-
-@media (min-width: 960px) {
-  .contact-container-nav {
-    display: block;
-    width: 33%;
-    padding-left: 100px;
-  }
-
-  .contact-container-mobile {
-    display: none;
-  }
-
-  .proj-card .img-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
+/*Medium Boy*/
 @media (min-width: 500px) {
+  .site-content {
+    margin-top: 100px;
+  }
+
   .contact-desc {
     display: grid;
   }
@@ -611,6 +608,41 @@ footer .footer-links a img:hover {
 
   .contact-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*BIG BOY */
+@media (min-width: 960px) {
+  .contact-container-nav {
+    display: block;
+    width: 33%;
+    padding-left: 100px;
+  }
+
+  .contact-container-mobile {
+    display: none;
+  }
+
+  .site-content {
+    margin-top: 115px;
+  }
+
+  .proj-card .img-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .blog {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .about {
+    width: 28vw;
+  }
+
+  .blog-entry {
+    width: 65vw;
   }
 }
 
