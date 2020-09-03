@@ -83,11 +83,16 @@ let headCards = document.querySelector("#head-cards");
 
 let allCards = document.querySelectorAll(".project");
 
+//BLOG
+//Blog Selectors
+let pizzaEx = document.querySelector("#pizzaEx");
+let pizzaContent = document.querySelector("#pizzaContent");
+
 //Reset the content
 function contentReset() {
   allContents.forEach((cont) => {
     cont.classList.add("hide");
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   });
 }
 
@@ -98,7 +103,7 @@ resumeNav.addEventListener("click", function () {
   blogNav.classList.remove("current");
   contentReset();
   resumeContent.classList.remove("hide");
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 });
 
 portfolioNav.addEventListener("click", function () {
@@ -107,7 +112,7 @@ portfolioNav.addEventListener("click", function () {
   blogNav.classList.remove("current");
   contentReset();
   portfolioContent.classList.remove("hide");
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 });
 
 blogNav.addEventListener("click", function () {
@@ -116,7 +121,7 @@ blogNav.addEventListener("click", function () {
   blogNav.classList.add("current");
   contentReset();
   blogContent.classList.remove("hide");
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 });
 
 //Contact Overlay
@@ -158,6 +163,13 @@ workEx.addEventListener("click", function () {
 volEx.addEventListener("click", function () {
   volContent.classList.toggle("hide");
   volEx.classList.toggle("flipped");
+});
+
+//Blog Expand Buttons to content
+pizzaEx.addEventListener("click", function () {
+  pizzaContent.classList.toggle("hide");
+  pizzaEx.classList.toggle("flipped");
+  console.log("Something");
 });
 
 //Project image selectors
@@ -246,7 +258,7 @@ contactForm.addEventListener("submit", function (event) {
   let name = document.querySelector("#nameInput").value;
   let message = document.querySelector("#messageInput").value;
   if (name.includes("@") && name.includes(".")) {
-   // document.querySelector("#nameInput").value = "";
+    // document.querySelector("#nameInput").value = "";
     message = document.querySelector("#messageInput") = "";
     if (!error.classList.contains("hide")) {
       error.classList.add("hide");
