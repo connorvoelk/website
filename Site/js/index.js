@@ -45,6 +45,9 @@ let blogContent = document.querySelector("#blog");
 
 let allContents = document.querySelectorAll(".content");
 
+//Top Button
+let topButton = document.querySelector("#topButton");
+
 //RESUME
 //Expand buttons
 let educEx = document.querySelector("#eduEx");
@@ -143,6 +146,30 @@ contactCloseBtn.addEventListener("click", function () {
 glassOverlay.addEventListener("click", function () {
   glassOverlay.classList.toggle("hide");
   contactOverlay.classList.add("hide");
+});
+
+//Top button mechanics
+window.onscroll = function () {
+  scrollFunction();
+}; //Whenever the user scrolls it checks
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 800 ||
+    document.documentElement.scrollTop > 800
+  ) {
+    topButton.classList.remove("hide");
+  } else {
+    topButton.classList.add("hide");
+  }
+}
+
+topButton.addEventListener("click", function () {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 });
 
 //Resume Expand Buttons to content
