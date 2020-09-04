@@ -40,6 +40,12 @@ nav .logo-container img {
   margin-bottom: 0;
 }
 
+nav .logo-container img:hover {
+  margin-left: 0;
+  width: 200px;
+  margin-bottom: 0;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -337,7 +343,7 @@ a:hover {
 /*SCROLL TO TOP */
 .top-button-container {
   position: fixed;
-  top: 110px;
+  top: 90px;
   left: 50% - 30px;
   z-index: 3;
 }
@@ -346,8 +352,6 @@ a:hover {
   border-radius: 100px;
   width: 60px;
   height: 60px;
-  opacity: 100%;
-  transition: opacity 0.3s;
 }
 
 .top-button img {
@@ -385,9 +389,6 @@ a:hover {
   margin-bottom: 20px;
   margin-right: 20px;
   z-index: 3;
-  position: fixed;
-  bottom: 0;
-  right: 0;
 }
 
 .contact-btn {
@@ -687,9 +688,7 @@ footer .footer-links a img:hover {
 }
 
 .hide {
-  opacity: 0%;
   display: none !important;
-  transition: opacity 0.3s;
 }
 
 .clickable:hover {
