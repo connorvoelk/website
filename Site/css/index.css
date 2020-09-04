@@ -420,6 +420,7 @@ a:hover {
 .contact-btn p {
   display: none;
   font-size: 1rem;
+  font-weight: 500;
   transition-duration: 300ms;
 }
 

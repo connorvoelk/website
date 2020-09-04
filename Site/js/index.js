@@ -89,8 +89,10 @@ let allCards = document.querySelectorAll(".project");
 //BLOG
 //Expand Buttons
 let pizzaEx = document.querySelector("#pizzaEx");
+let augEx = document.querySelector("#augEx");
 //Contents
 let pizzaContent = document.querySelector("#pizzaContent");
+let augContent = document.querySelector("#augContent");
 
 //Reset the content
 function contentReset() {
@@ -197,6 +199,11 @@ volEx.addEventListener("click", function () {
 pizzaEx.addEventListener("click", function () {
   pizzaContent.classList.toggle("hide");
   pizzaEx.classList.toggle("flipped");
+});
+
+augEx.addEventListener("click", function () {
+  augContent.classList.toggle("hide");
+  augEx.classList.toggle("flipped");
 });
 
 //Project image selectors
