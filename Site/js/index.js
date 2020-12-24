@@ -69,7 +69,7 @@ let shareSelector = document.querySelector("#share");
 let consSelector = document.querySelector("#cons");
 let knoSelector = document.querySelector("#kno");
 let deathSelector = document.querySelector("#death");
-let instSelector = document.querySelector("#inst");
+let photoSelector = document.querySelector("#photo");
 let headSelector = document.querySelector("#head");
 
 let allSelectors = document.querySelectorAll(".proj-img");
@@ -263,10 +263,10 @@ deathSelector.addEventListener("click", function () {
   deathCards.classList.remove("hide");
 });
 
-instSelector.addEventListener("click", function () {
+photoSelector.addEventListener("click", function () {
   removeAllSelected();
   console.log(allSelectors);
-  instSelector.classList.add("selected");
+  photoSelector.classList.add("selected");
   removeAllCards();
   instCards.classList.remove("hide");
 });

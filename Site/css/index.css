@@ -206,6 +206,7 @@ nav li:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-radius: 0px !important;
 }
 
 .made-imgs img {
